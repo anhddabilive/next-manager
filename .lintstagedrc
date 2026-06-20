@@ -1,0 +1,3 @@
+{
+	"**/!(*.min).{js,jsx,ts,tsx,scss,html}": "prettier --write --config .prettierrc"
+}

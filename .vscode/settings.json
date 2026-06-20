@@ -1,0 +1,14 @@
+{
+	"typescript.preferences.includePackageJsonAutoImports": "auto",
+	"typescript.suggest.autoImports": true,
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"typescript.suggest.paths": true,
+	"typescript.preferences.importModuleSpecifier": "relative",
+	"typescript.suggest.completeFunctionCalls": true,
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": "explicit"
+	},
+	"typescript.preferences.includeCompletionsForImportStatements": true,
+	"typescript.suggest.includeAutomaticOptionalChainCompletions": true,
+	"editor.formatOnSave": true,
+}
