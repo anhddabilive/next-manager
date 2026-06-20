@@ -11,6 +11,7 @@
 		"format": "prettier '**/!(*.min).{js,jsx,ts,tsx,scss,html}' --write --config .prettierrc"
 	},
 	"dependencies": {
+		"@stackframe/stack": "^2.8.108",
 		"husky": "^9.1.7",
 		"lint-staged": "^17.0.7",
 		"next": "16.2.9",
