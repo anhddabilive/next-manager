@@ -3,14 +3,20 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		"dev": "next dev",
-		"build": "next build",
+		"dev": "prisma generate && next dev --inspect",
+		"build": "prisma generate && next build",
+		"debug": "next build --debug-prerender",
 		"start": "next start",
-		"lint": "eslint",
 		"prepare": "husky",
-		"format": "prettier '**/!(*.min).{js,jsx,ts,tsx,scss,html}' --write --config .prettierrc"
+		"format": "prettier '**/!(*.min).{js,jsx,ts,tsx,scss,html}' --write --config .prettierrc",
+		"db:generate": "prisma generate",
+		"db:migrate": "prisma migrate dev",
+		"db:studio": "prisma studio",
+		"db:seed": "tsx prisma/seed.ts"
 	},
 	"dependencies": {
+		"@prisma/adapter-pg": "^7.8.0",
+		"@prisma/client": "^7.8.0",
 		"@stackframe/stack": "^2.8.108",
 		"husky": "^9.1.7",
 		"lint-staged": "^17.0.7",
@@ -24,9 +30,12 @@
 		"@types/node": "^20",
 		"@types/react": "^19",
 		"@types/react-dom": "^19",
+		"dotenv": "^17.4.2",
 		"eslint": "^9",
 		"eslint-config-next": "16.2.9",
+		"prisma": "^7.8.0",
 		"tailwindcss": "^4",
+		"tsx": "^4.22.4",
 		"typescript": "^5"
 	}
 }
